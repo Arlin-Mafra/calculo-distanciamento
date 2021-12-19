@@ -59,11 +59,25 @@ export const DistanceInfo = styled.div`
   color:var(--background-result);
 `;
 
-export const Lousa = styled.div`
-  width: 270px;
-  background-color: blue;
-  display: flex;
+export const LousaWrapper = styled.div`
+  width: 340px;
+  display: block;
   justify-content: center;
+`;
+export const LousaArrowBotton = styled.div`
+  width: 340px;
+  display: flex;
+
+  img{
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+`;
+
+export const ArrowRigthWrapper = styled.div`
+  width: 300px;
+  display: flex;
+  margin-top: 10px;
 `;
 
 export const Results = styled.div`

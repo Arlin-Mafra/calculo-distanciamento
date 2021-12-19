@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
+import { Lousa } from "../../components/Lousa";
 
 import {
   Content,
@@ -12,7 +13,9 @@ import {
   DistanceWrapper,
   DistanceTitle,
   DistanceInfo,
-  Lousa,
+  LousaWrapper,
+  LousaArrowBotton,
+  ArrowRigthWrapper,
   Results,
 } from "./styles";
 
@@ -78,9 +81,15 @@ export function Home() {
           </DistanceWrapper>
         </InputDatas>
 
-        <Lousa>
-          <h1>Centro</h1>
-        </Lousa>
+        <LousaWrapper>
+          <LousaArrowBotton>
+            <Lousa />
+            <img src="/images/arrow-botton.svg" alt="Largura" />
+          </LousaArrowBotton>
+          <ArrowRigthWrapper>
+            <img src="/images/arrow-rigth.svg" alt="Largura" />
+          </ArrowRigthWrapper>
+        </LousaWrapper>
 
         <Results>
           <h1>Direita</h1>
