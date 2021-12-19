@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
 
 import {
   Content,
@@ -7,17 +8,9 @@ import {
   ButtonLoad,
   InputWrraper,
   InputTitle,
-  InputDataWrapper,
-  InputData,
-  InputLabel,
-  InputLabelWrapper,
   InputInfo,
   DistanceWrapper,
   DistanceTitle,
-  DistanceInputWrapper,
-  DistanceInput,
-  DistanceLabelWrapper,
-  DistanceLabel,
   DistanceInfo,
   Lousa,
   Results,
@@ -38,12 +31,7 @@ export function Home() {
           </ButtonLoad>
           <InputWrraper>
             <InputTitle>Largura da sala</InputTitle>
-            <InputDataWrapper>
-              <InputData />
-              <InputLabelWrapper>
-                <InputLabel>m</InputLabel>
-              </InputLabelWrapper>
-            </InputDataWrapper>
+            <Input width={100} type="number" placeholder="10 metros" />
             <InputInfo>
               A largura da sala em <br />
               metros. Esta é a <br />
@@ -52,12 +40,7 @@ export function Home() {
               colocada.
             </InputInfo>
             <InputTitle>Profundidade da sala</InputTitle>
-            <InputDataWrapper>
-              <InputData />
-              <InputLabelWrapper>
-                <InputLabel>m</InputLabel>
-              </InputLabelWrapper>
-            </InputDataWrapper>
+            <Input width={100} type="number" placeholder="10 metros" />
             <InputInfo>
               A profundidade da <br />
               sala em metros. Esta <br />
@@ -65,14 +48,10 @@ export function Home() {
               parede sem a lousa.
             </InputInfo>
           </InputWrraper>
+
           <DistanceWrapper>
             <DistanceTitle>Distanciamento social</DistanceTitle>
-            <DistanceInputWrapper>
-              <DistanceInput />
-              <DistanceLabelWrapper>
-                <DistanceLabel>m</DistanceLabel>
-              </DistanceLabelWrapper>
-            </DistanceInputWrapper>
+            <Input width={238} type="number" placeholder="1,5 metros" />
             <DistanceInfo>
               A distância mínima que deve haver entre as
               <br />
@@ -81,12 +60,7 @@ export function Home() {
           </DistanceWrapper>
           <DistanceWrapper>
             <DistanceTitle>Espaço reservado ao estudante</DistanceTitle>
-            <DistanceInputWrapper>
-              <DistanceInput />
-              <DistanceLabelWrapper>
-                <DistanceLabel>m</DistanceLabel>
-              </DistanceLabelWrapper>
-            </DistanceInputWrapper>
+            <Input width={238} type="number" placeholder="1,5 metros" />
             <DistanceInfo>
               O diâmetro em metros da área ocupada por um <br />
               estudante, incluindo o tamanho da carteira.
@@ -94,12 +68,7 @@ export function Home() {
           </DistanceWrapper>
           <DistanceWrapper>
             <DistanceTitle>Espaço reservado ao docente</DistanceTitle>
-            <DistanceInputWrapper>
-              <DistanceInput />
-              <DistanceLabelWrapper>
-                <DistanceLabel>m</DistanceLabel>
-              </DistanceLabelWrapper>
-            </DistanceInputWrapper>
+            <Input width={238} type="number" placeholder="1,5 metros" />
             <DistanceInfo>
               A distância em metros até a qual o docente
               <br />
