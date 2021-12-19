@@ -2,10 +2,18 @@ import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
+ :root{
+     --background: #E5E5E5;
+     --background-result: #C4C4C4;
+     --header: #01579B;
+     --button: #17A2B8;
+     --button-ligth: #99DEE9;       
+ }   
  *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     background: var(---background);
  }
  html{
      @media (max-width: 1080){
