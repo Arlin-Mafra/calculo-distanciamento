@@ -65,6 +65,8 @@ export const LousaWrapper = styled.div`
   justify-content: center;
 `;
 export const LousaArrowBotton = styled.div`
+  display: flex;
+  
   width: 340px;
   display: flex;
 

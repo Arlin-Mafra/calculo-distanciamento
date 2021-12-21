@@ -70,7 +70,7 @@ export function Home() {
             </InputInfo>
             <InputTitle>Profundidade da sala</InputTitle>
             <Input
-              width={30}
+              width={100}
               maxLength={20}
               type="number"
               placeholder="10 metros"

@@ -7,8 +7,8 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export function Input({ width, ...rest }: InputProps) {
   return (
-    <Container>
-      <InputData width={width} {...rest} />
+    <Container style={{ width }}>
+      <InputData {...rest} />
       <InputLabelWrapper>
         <InputLabel>m</InputLabel>
       </InputLabelWrapper>
