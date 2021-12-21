@@ -1,15 +1,14 @@
+import { InputHTMLAttributes } from "react";
 import { Container, InputData, InputLabelWrapper, InputLabel } from "./styles";
 
-interface InputProps {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   width: number;
-  type: string;
-  placeholder: string;
 }
 
-export function Input({ width, type, placeholder }: InputProps) {
+export function Input({ width, ...rest }: InputProps) {
   return (
-    <Container style={{ width: width }}>
-      <InputData placeholder={placeholder} type={type} />
+    <Container>
+      <InputData width={width} {...rest} />
       <InputLabelWrapper>
         <InputLabel>m</InputLabel>
       </InputLabelWrapper>

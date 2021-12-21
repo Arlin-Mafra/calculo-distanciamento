@@ -2,7 +2,11 @@ import { IoIosSchool } from "react-icons/io";
 
 import { Container, Content, Frame, Title, Students } from "./styles";
 
-export function Lousa() {
+interface Props {
+  amount: number;
+}
+
+export function Lousa({ amount }: Props) {
   return (
     <Container>
       <Frame>
@@ -22,7 +26,7 @@ export function Lousa() {
         <IoIosSchool size={20} />
         <IoIosSchool size={20} />
       </Content>
-      <Students>12 Alunos</Students>
+      <Students>{amount} Alunos</Students>
     </Container>
   );
 }
