@@ -2,12 +2,13 @@ import { ChangeEvent, useState } from "react";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { Lousa } from "../../components/Lousa";
+import { Result } from "../../components/Result";
 
 import {
   Content,
   InputDatas,
   Info,
-  ButtonLoad,
+  Button,
   InputWrraper,
   InputTitle,
   InputInfo,
@@ -47,9 +48,7 @@ export function Home() {
             Atualize os valores deste formulário para que as alterações sejam
             automaticamente refletidas na representação ao lado.
           </Info>
-          <ButtonLoad onClick={() => {}}>
-            Carregar sala pré-configurada
-          </ButtonLoad>
+          <Button onClick={() => {}}>Carregar sala pré-configurada</Button>
           <InputWrraper>
             <InputTitle>Largura da sala</InputTitle>
             <Input
@@ -138,7 +137,7 @@ export function Home() {
               parede que contém a lousa.
             </DistanceInfo>
           </DistanceWrapper>
-          <button onClick={handleCalcDistance}>Calc</button>
+          <Button onClick={handleCalcDistance}>Calcular</Button>
         </InputDatas>
 
         <LousaWrapper>
@@ -152,7 +151,7 @@ export function Home() {
         </LousaWrapper>
 
         <Results>
-          <h1>Direita</h1>
+          <Result />
         </Results>
       </Content>
     </>

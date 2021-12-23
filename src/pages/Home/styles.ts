@@ -13,13 +13,14 @@ export const InputDatas = styled.div`
   width: 270px;
   display: block;
   justify-content: center;
+
 `;
 export const Info = styled.h2`
   color: #000000;
   font-size: 16px;
 `;
 
-export const ButtonLoad = styled.button`
+export const Button = styled.button`
   width: 226px;
   height: 52px;
   border-radius: 4px;
@@ -84,7 +85,6 @@ export const ArrowRigthWrapper = styled.div`
 
 export const Results = styled.div`
   width: 270px;
-  background-color: blue;
   display: flex;
   justify-content: center;
 `;
